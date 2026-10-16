@@ -1,0 +1,160 @@
+/*
+  Name: Keith N Lonon
+  Date: 10.16.2026
+  CSC 372-01
+
+  This stylesheet provides layout and visual styles for the TVmaze show gallery, including
+  responsive flexbox-based cards, typography, and basic page structure.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f5f7;
+  color: #222222;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 0.5rem;
+}
+
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.page-header {
+  padding: 1.5rem 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.intro-text {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-form label {
+  font-weight: 600;
+}
+
+.search-form input[type="text"] {
+  flex: 1 1 200px;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 0.45rem 0.9rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0055aa;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background-color: #003f80;
+}
+
+.page-main {
+  padding: 1rem;
+}
+
+.message-container {
+  margin-bottom: 1rem;
+  min-height: 1.25rem;
+  font-weight: 600;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.show-card {
+  flex: 1 1 260px;
+  max-width: 320px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-card-header {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.show-image {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.show-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.show-meta {
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+.show-summary {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.show-genres,
+.show-rating,
+.show-cast {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.show-link {
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+.page-footer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555555;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    padding: 1.5rem 2rem;
+  }
+}

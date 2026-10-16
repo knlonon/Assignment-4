@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  Name: Keith N Lonon
+  Date: 10.16.2026
+  CSC 372-01
+
+  This is the index.html page for my TVmaze show gallery assignment. It provides a searchable
+  gallery of TV shows using the TVmaze API, including show details, cast information, and
+  attribution to TVmaze.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TVmaze Show Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>TVmaze Show Gallery</h1>
+      <p class="intro-text">
+        Search for TV shows and view details, including cast information, powered by the TVmaze API.
+      </p>
+      <form id="search-form" class="search-form">
+        <label for="search-input">Search shows</label>
+        <input
+          id="search-input"
+          type="text"
+          name="query"
+          placeholder="Enter a show title or keyword"
+        >
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <main class="page-main">
+      <section id="message-container" class="message-container" aria-live="polite"></section>
+
+      <section id="gallery" class="gallery" aria-label="TV show search results">
+        <!-- Cards are inserted here by JavaScript -->
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        Data provided by
+        <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">
+          TVmaze API
+        </a>.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
