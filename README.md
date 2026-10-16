@@ -1,1 +1,2 @@
 # Assignment-4
+This project is a searchable TV show gallery built using HTML, CSS, and JavaScript, powered by the TVmaze public API. Visitors can enter a show title or keyword and view up to ten matching shows, including summaries, genres, ratings, premiere dates, last updated timestamps, and cast information retrieved through a second API request.
